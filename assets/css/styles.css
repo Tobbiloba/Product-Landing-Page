@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -23,9 +23,9 @@
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -44,8 +44,8 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -65,10 +65,12 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .4s; /*For animation dark mode*/
+  transition: 0.4s; /*For animation dark mode*/
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -89,15 +91,12 @@ img {
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
 
-
 /*========== Button Dark/Light ==========*/
-
 
 /*========== 
     Color changes in some parts of 
     the website, in dark theme 
 ==========*/
-
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -126,59 +125,95 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: var(--z-fixed);
+  transition: 0.4s;
+}
 
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.nav__logo {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+@media screen and (max-width: 1023px) {
+  .nav__menu {
+    position: fixed;
+    bottom: 1.5rem;
+    background-color: var(--body-color);
+    box-shadow: 0 4px 12px hsla(220, 18%, 40%, 0.15);
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 1.25rem 2.8rem;
+    border-radius: 0.5rem;
+  }
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__link {
+    color: var(--text-color-light);
+    font-weight: var(--font-medium);
+    display: grid;
+    justify-items: center;
+    row-gap: 0.25rem;
+  }
+
+  .nav__link {
+    font-size: 1.25rem;
+  }
+  .nav__link span {
+    font-size: 0.688rem;
+  }
+}
 /* Change background header */
-
 
 /* Active link */
 
-
 /*=============== HOME ===============*/
-
 
 /*=============== BUTTON ===============*/
 
-
 /*=============== NEW ===============*/
-
 
 /*=============== COLLECTION ===============*/
 
-
 /*=============== PRODUCTS ===============*/
-
 
 /* Swiper class */
 
-
 /*=============== BRANDS ===============*/
-
 
 /*=============== FOOTER ===============*/
 
-
 /*=============== SCROLL BAR ===============*/
-
 
 /*=============== SCROLL UP ===============*/
 
-
 /* Show Scroll Up*/
-
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
-
 /* For medium devices */
-
 
 /* For large devices */
 
-
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
 
-
 /* For 4K resolutions (3840 x 2160, 4096 x 2160) */
-
