@@ -182,7 +182,10 @@ img {
   }
 }
 /* Change background header */
-
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 1px 4px hsla(220, 4%, 15%, 0.1);
+}
 /* Active link */
 
 /*=============== HOME ===============*/
@@ -265,7 +268,7 @@ img {
 .new__link {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   color: var(--title-color);
   padding-right: 0.75rem;
 }
@@ -283,6 +286,9 @@ img {
 .new__subtitle {
   font-size: var(--smaller-font-size);
   color: var(--text-color);
+}
+.new__link:hover i {
+  transform: translateX(0.25rem);
 }
 .new__cart {
   padding-bottom: 2rem;
