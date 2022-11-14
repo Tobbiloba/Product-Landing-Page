@@ -363,7 +363,27 @@ img {
 }
 
 /* Swiper class */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
 
+.swiper-button-prev,
+.swiper-button-next {
+  top: initial;
+  bottom: 0;
+  width: initial;
+  height: initial;
+  font-size: 1.5rem;
+  color: var(--title-color);
+}
+
+.swiper-button-prev {
+  left: calc(50% - 2rem);
+}
+.swiper-button-next {
+  right: calc(50% - 2rem);
+}
 /*=============== BRANDS ===============*/
 
 /*=============== FOOTER ===============*/
