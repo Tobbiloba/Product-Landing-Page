@@ -17,10 +17,10 @@
       rel="stylesheet"
     />
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Responsive clothing ecommerce - Bedimcode</title>
   </head>
@@ -215,9 +215,9 @@
           Best Products
         </h2>
 
-        <div class="products__container container">
-          <div>
-            <article class="products__card">
+        <div class="products__container container swiper">
+          <div class="swiper-wrapper">
+            <article class="products__card swiper-slide">
               <img
                 src="assets/img/product1.png"
                 alt="image"
@@ -228,7 +228,7 @@
               <span class="products__price">$124.99</span>
             </article>
 
-            <article class="products__card">
+            <article class="products__card swiper-slide">
               <img
                 src="assets/img/product2.png"
                 alt="image"
@@ -236,10 +236,10 @@
               />
 
               <h2 class="products__title">Black Sports Shorts</h2>
-              <span class="products__price">$34.99/span>
+              <span class="products__price">$34.99</span>
             </article>
 
-            <article class="products__card">
+            <article class="products__card swiper-slide">
               <img
                 src="assets/img/product3.png"
                 alt="image"
@@ -250,7 +250,7 @@
               <span class="products__price">$97.99</span>
             </article>
 
-            <article class="products__card">
+            <article class="products__card swiper-slide">
               <img
                 src="assets/img/product4.png"
                 alt="image"
@@ -260,6 +260,13 @@
               <h2 class="products__title">Blus Sports Pants</h2>
               <span class="products__price">$69.99</span>
             </article>
+          </div>
+
+          <div class="swiper-button-next">
+            <i class="ri-arrow-right-line"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="ri-arrow-left-line"></i>
           </div>
         </div>
       </section>
