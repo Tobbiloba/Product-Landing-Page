@@ -340,7 +340,27 @@ img {
   margin-bottom: 2.5rem;
 }
 /*=============== PRODUCTS ===============*/
+.products__container {
+  padding-bottom: 5rem;
+}
 
+.products__card {
+  width: 270px;
+}
+
+.products__img {
+  margin-bottom: 1rem;
+}
+
+.products__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.75rem;
+}
+
+.products__price {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
 /* Swiper class */
 
 /*=============== BRANDS ===============*/
