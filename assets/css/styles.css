@@ -90,14 +90,46 @@ img {
 
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
-
+body.dark-theme {
+  --bg-color: hsl(220, 18%, 13%);
+  --bg-color-light: hsl(220, 18%, 23%);
+  --title-color: hsl(220, 8%, 95%);
+  --text-color: hsl(220, 4%, 65%);
+  --body-color: hsl(220, 18%, 18%);
+  --container-color: hsl(220, 18%, 21%);
+}
 /*========== Button Dark/Light ==========*/
-
+.change-theme {
+  color: var(--title-color);
+  font-size: 1.125rem;
+  cursor: pointer;
+}
 /*========== 
     Color changes in some parts of 
     the website, in dark theme 
 ==========*/
+.dark-theme .scroll-header {
+  box-shadow: 0 2px 8px hsla(220, 18% 8% 0.3);
+}
 
+.dark-theme .nav__menu {
+  background-color: var(--container-color);
+}
+.dark-theme .nav__menu,
+.dark-theme .scrollup {
+  box-shadow: 0 4px 8px hsla(220, 18%, 8%, 0.3);
+}
+
+.dark-theme::-webkit-scrollbar {
+  background-color: hsl(220, 18%, 15%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+  background-color: hsl(220, 18%, 25%);
+}
+.dark-theme::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(220, 18%, 35%);
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
@@ -159,6 +191,7 @@ img {
     margin: 0 auto;
     padding: 1.25rem 2.8rem;
     border-radius: 0.5rem;
+    transition: 0.4s; /*For animation dark mode*/
   }
   .nav__list {
     display: flex;
@@ -194,6 +227,7 @@ img {
 .home {
   background-color: var(--bg-color);
   overflow: hidden;
+  transition: 0.4s; /*For animation dark mode*/
 }
 
 .home__container {
@@ -304,6 +338,7 @@ img {
 .collection {
   background-color: var(--bg-color-light);
   overflow: hidden;
+  transition: 0.4s; /*For animation dark mode*/
 }
 
 .collection__container {
