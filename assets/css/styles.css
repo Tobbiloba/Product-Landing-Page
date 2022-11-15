@@ -480,7 +480,16 @@ img {
   color: var(--text-color-light);
 }
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(220, 8%, 76%);
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: hsl(220, 8%, 64%);
+  border-radius: 0.5rem;
+}
 /*=============== SCROLL UP ===============*/
 
 /* Show Scroll Up*/
