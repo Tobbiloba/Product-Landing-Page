@@ -285,11 +285,16 @@ body.dark-theme {
 /*=============== NEW ===============*/
 .new__container {
   row-gap: 2.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding-bottom: 1.5rem;
+
+  align-items: center;
 }
 
 .new__card {
-  justify-content: center;
+  justify-self: center;
 }
 
 .new__img {
@@ -424,6 +429,7 @@ body.dark-theme {
 /*=============== BRANDS ===============*/
 .brand__container {
   grid-template-columns: repeat(2, max-content);
+
   justify-content: center;
   column-gap: 1.25rem;
 }
@@ -646,6 +652,60 @@ body.dark-theme {
 }
 /* For medium devices */
 @media screen and (min-width: 576px) {
+  .nav__menu {
+    width: 342px;
+  }
+  .brand__container {
+    grid-template-columns: repeat(2, max-content);
+
+    justify-content: center;
+    column-gap: 1.25rem;
+  }
+
+  .brand__img {
+    width: 120px;
+  }
+
+  .brand__img:nth-child(even) {
+    margin: 5rem;
+  }
+  .last__brand {
+    position: relative;
+    left: 8rem;
+    bottom: 7rem;
+  }
+
+  .footer__content {
+    grid-template-columns: repeat(3, max-content);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .home__container {
+    grid-template-columns: repeat(2, max-centent);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+  }
+  .home__images {
+    margin-top: 6rem;
+  }
+  .new__container {
+    grid-template-columns: repeat(2, max-centent);
+  }
+  .collection__container {
+    display: flex;
+    justify-content: center;
+  }
+  .brand__container {
+    padding: 0px 0px 0px 120px;
+  }
+  .footer__container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
 }
 /* For large devices */
 
