@@ -700,8 +700,11 @@ body.dark-theme {
     justify-content: center;
   }
   .brand__container {
-    grid-template-columns: 4, max-content;
     padding: 0px 0px 0px 120px;
+  }
+  .footer__container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
   }
 }
 /* For large devices */
