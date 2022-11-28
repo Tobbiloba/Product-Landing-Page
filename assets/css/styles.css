@@ -693,7 +693,9 @@ body.dark-theme {
     margin-top: 6rem;
   }
   .new__container {
-    grid-template-columns: repeat(2, max-centent);
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
   }
   .collection__container {
     display: flex;
@@ -730,6 +732,25 @@ body.dark-theme {
     color: var(--text-color);
     font-weight: var(--font-medium);
     transition: 0.3s;
+  }
+  .nav__link i {
+    display: none;
+  }
+  .nav__linnk:hover {
+    color: var(--title-color);
+  }
+  .active-link {
+    color: var(--title-color);
+    text-decoration: line-through;
+  }
+  .change-theme {
+    margin-left: 3rem;
+    color: var(--text-color);
+  }
+  .new__container {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(2, max-content);
   }
 }
 
