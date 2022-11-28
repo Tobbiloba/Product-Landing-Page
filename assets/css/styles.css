@@ -751,6 +751,18 @@ body.dark-theme {
     background-color: transparent;
     box-shadow: none;
   }
+  .products__container {
+    width: 954px;
+  }
+  /* .brands__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .last__brand {
+    left: auto;
+    top: 5px;
+  }
 }
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
