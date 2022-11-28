@@ -747,10 +747,9 @@ body.dark-theme {
     margin-left: 3rem;
     color: var(--text-color);
   }
-  .new__container {
-    display: flex;
-    flex-direction: row;
-    grid-template-columns: repeat(2, max-content);
+  .dark-theme .nav__menu {
+    background-color: transparent;
+    box-shadow: none;
   }
 }
 
