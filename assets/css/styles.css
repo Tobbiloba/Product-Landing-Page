@@ -841,6 +841,10 @@ body.dark-theme {
   .collection__container {
     column-gap: 5rem;
   }
+
+  .products__container {
+    padding-bottom: 7rem;
+  }
 }
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
 
