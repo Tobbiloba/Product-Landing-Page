@@ -763,8 +763,68 @@ body.dark-theme {
     left: auto;
     top: 5px;
   }
+  .footer__content {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 5.5rem;
+  }
+  .footer__link {
+    font-size: var(--normal-font-size);
+  }
+  .footer__info {
+    padding-bottom: 2rem;
+    row-gap: 1rem;
+  }
 }
 
+@media screen and (min-width: 1054px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .new__container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .new__cart {
+    padding-left: 5rem;
+  }
+  .vid {
+    width: 20rem;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+  .home__container {
+    padding: 10rem 0 3rem;
+    column-gap: 0;
+    height: auto;
+  }
+  .home__images {
+    width: 500px;
+    margin-top: 8rem;
+    transform: translate(-1rem);
+  }
+  .home__images img:nth-child(1) {
+    width: 340px;
+    top: -14.5rem;
+  }
+  .home__images img:nth-child(2) {
+    width: 277px;
+    top: 5rem;
+  }
+  .new__container {
+    grid-template-columns: repeat(3, max-content);
+    padding-bottom: 4.5rem;
+    gap: 4.5rem;
+  }
+  .new__img {
+    margin-bottom: 1.25rem;
+  }
+}
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
 
 /* For 4K resolutions (3840 x 2160, 4096 x 2160) */
