@@ -824,6 +824,19 @@ body.dark-theme {
   .new__img {
     margin-bottom: 1.25rem;
   }
+
+  .collection__container {
+    height: 760px;
+    margin-bottom: 2rem;
+  }
+  .collection__explore:nth-child(1) {
+    grid-template-columns: max-content 330px;
+    margin-left: 10rem;
+  }
+  .collection__explore:nth-child(2) {
+    grid-template-columns: 330px max-content;
+    margin-right: 10rem;
+  }
 }
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
 
